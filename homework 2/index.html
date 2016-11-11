@@ -2,30 +2,57 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Homework - Lists</title>
+        <title>Petr Sedláček - Úkol Seznamy</title>
         <style>
+            /* ===================
+              CSS DLE ZADÁNÍ 
+            ====================== */
             ol li{
-                background-color: orange; /* <-- DLE ZADÁNÍ: SVĚTLE ORANŽOVÁ */
-                color: brown;
+                background-color: #ffe0b2;
+                color: #795548;
             }
 
             li li{
-                background-color: pink; /* <-- DLE ZADÁNÍ: SVĚTLE ČERVENÁ */
+                background-color: #ffcdd2;
             }
 
             li li li{
-                background-color: lightblue;
-                color: darkblue;
+                background-color: #c5cae9;
+                color: #0d47a1;
             }
 
             a[href="http://www.kasa.cz/"]{
                 font-weight: bold;
                 text-decoration: none;
             }
+
+            /* ===============================
+            VLASTNÍ CSS PRO ZKRÁŠLENÍ STRÁNKY 
+            ================================ */
+            *{
+                font-family: Segoe UI, Arial;
+            }
+
+            body{
+                background-color: #eee;
+                padding: 5px 30px;
+            }
+
+            h1{
+                background-color: #e91e63;
+                color: #fff;
+                font-weight: normal;
+                font-size: 20px;
+                padding: 15px
+            }
+
+            li{
+                padding: 3px;
+            }
         </style>
     </head>
     <body>
-        <h1>Nesetřízený seznam vyhledávačů</h1>
+        <h1>6 vyhledávačů, které nesmíte přehlédnout</h1>
         <ul>
             <li><a href="https://www.google.com" target="_blank">Google</a></li>
             <li><a href="https://www.yahoo.com/" target="_blank">Yahoo</a></li>
