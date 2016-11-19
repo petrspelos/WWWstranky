@@ -2,34 +2,128 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Homework - Tables</title>
+        <title>BEEP - otevírací doba</title>
         <style>
-            table{
-                border: 3px solid black; /* 3px dle zadání, zbytek -> Změň mě */
+            body{
+                margin: 0px;
+                padding: 0px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: #eee;
             }
 
+            table{
+                border: 3px solid grey;
+                background-color: #fff;
+                width: 90%;
+                margin: auto;
+                box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.2);
+                padding: 10px;
+            }
+
+            caption{
+                margin-bottom: 10px;
+                color: grey;
+            }
             table tr:nth-child(even) {
 
-                background-color: pink; /* <--- Změň mě */
+                background-color: #fff9c4;
             }
             
             table tr:nth-child(odd) {
+                background-color: #fff; 
+            }
 
-                background-color: red; /* <--- Změň mě */
+            table tr:nth-child(1) {
+                color: grey;
+                background-color: white;
+            }
+
+            table tr:nth-child(1) th {
+                padding: 20px;
+                border-bottom: 2px solid lightgrey;
+            }
+
+            table tr th:nth-child(1){
+                background-color: #fff;
+                width: 100px;
+            }
+
+            th{
+                padding: 10px;
+                font-weight: normal;
+                border-bottom: 1px solid lightgrey;
             }
 
             table tr:hover{
-                background-color: lightblue; /* <--- Změň mě (dle zadání, světlá barva) */
+                background-color: #ffeb3b;
             }
 
-            /* JEŠTĚ TABULKU VLOŽIT DO STRÁNKY OBCHODU */
-            /* (vytvořit nějaký header, nav, cokoliv...) */
+            header{
+                background-color: #ffeb3b;
+                padding: 30px;
+                overflow: hidden;
+                box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.2);
+                margin-bottom: 30px;
+            }
+        
+            .logo{
+                float: left;
+            }
+
+            .logo p{
+                text-align: center;
+                margin: 0px;
+                color: #689f38;
+            }
+
+            form{
+                width: 100%;
+                margin-top: 70px;
+            }
+
+            form input{
+                padding: 10px;
+                font-size: 20px;
+            }
+
+            form input[type=submit]{
+                background: none;
+                border: none;
+                transition: 0.3s;
+            }
+
+            form input[type=submit]:hover{
+                background-color: rgba(0,0,0,0.3);
+                cursor: pointer;
+            }
+
+            form input[type=search]{
+                border: none;
+                border-bottom: 1px solid grey;
+                background: none;
+                width: 70%;
+            }
         </style>
     </head>
     <body>
+        <header>
+            <div class="logo">
+                <img alt="BEEP logo" src="img/beep-fake-shop-logo.png">
+                <p>Jedno pípnutí nestačí</p>
+            </div>
+            <form>
+                <input type="submit" value="🔎">
+                <input type="search" placeholder="Vyhledat produkt (&#169; Petr Sedláček 2016)"/>
+            </form>
+        </header>
+
+
+
+
+
         <table>
             <thead>
-                <caption>[Název Obchodu] <!-- Změň mě --> - Otevírací doba</caption> 
+                <caption>BEEP - Otevírací doba</caption> 
             </thead>
             <tbody>
                 <tr>
@@ -77,7 +171,7 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <th colspan="4">Adresa obchodu <!-- Změň mě --></th>
+                    <th colspan="4">3430 Dogwood Road Phoenix Arizona 85034</th>
                 </tr>
             </tfoot>
         </table>
