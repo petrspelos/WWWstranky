@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <title>Název stránky</title> <!-- ZMĚŇ MĚ -->
+        <style>
+            body{
+                margin: 0px;
+                width: 100%;
+            }
+
+            header{
+                border: 2px dashed #3f51b5; /* Není VŮBEC nutno, pouze na zviditelnění oblasti */
+                margin-bottom: 10px; /* <-- Není nutno, popřípadě možno změnit */
+                padding: 10px; /* <-- Není nutno, popřípadě možno změnit */
+                /* Zde je možno přidat další vlastnosti */
+            }
+
+            footer{
+                border: 2px dashed #ffc107; /* Není VŮBEC nutno, pouze na zviditelnění oblasti */
+                padding: 20px;
+                margin-top: 20px;
+                /* Zde je možno přidat další vlastnosti */
+            }
+
+            .levy{
+                float: left;
+                width: 33%;
+                border: 2px dashed #f44336; /* Není VŮBEC nutno, pouze na zviditelnění oblasti */
+            }
+
+            .pravy{
+                float: right;
+                width: 33%;
+                height: 300px; /* Zadání říká pevná délka, ale nespecifikuje kolik. Změň mě */
+                border: 2px dashed #f44336; /* Není VŮBEC nutno, pouze na zviditelnění oblasti */
+            }
+
+            main{
+                display: inline-block;
+                width: 33%;
+                border: 2px dashed #f44336; /* Není VŮBEC nutno, pouze na zviditelnění oblasti */
+            }
+
+            img{
+                border: 2px dashed green; /* Není VŮBEC nutno, celý img{} */
+            }
+
+            section{
+                overflow: hidden;
+                width: 100%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <span>Zadání: Zadání neobsahuje informace o obsahu hlavičky.</span>
+        </header>
+
+        <section>
+            <div class="levy"> <!-- je nutno změnit název třídy -->
+                <nav>
+                    <span>Zadání: Navigace</span>
+                    <!-- Odkazy na neexistující části stránky, seznam nebo odkazy -->    
+                </nav>
+                <span>Zadání: tabulka s aktuálním měsícem a datem</span>
+                <table>
+                    <tr>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                    </tr>
+                    <tr>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                    </tr>
+                    <tr>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                    </tr>
+                </table>
+                <!-- Zadání nespecifikuje, jak má tabulka vypadat -->
+            </div>
+    
+            <main>
+                <article>
+                    <meta name="description" content=""> <!-- Vyplň -->
+                    <meta name="keywords" content=""> <!-- Vyplň -->
+                    <meta name="author" content=""> <!-- Vyplň -->
+                    <h1>nadpis</h1>
+                    <h2>abstrakt</h2>
+                    <p>text</p>
+                    <img src="https://placeholdit.imgix.net/~text?txtsize=23&bg=ffffff&txtclr=000000&txt=Zku%C5%A1ebn%C3%AD%20obr%C3%A1zek&w=250&h=250" width="250" height="250" alt="popis"> <!-- Změň obrázek, změň width a height -->
+                </article>
+
+                <article>
+                    <meta name="description" content=""> <!-- Vyplň -->
+                    <meta name="keywords" content=""> <!-- Vyplň -->
+                    <meta name="author" content=""> <!-- Vyplň -->
+                    <h1>nadpis</h1>
+                    <h2>abstrakt</h2>
+                    <p>text</p>
+                    <img src="https://placeholdit.imgix.net/~text?txtsize=23&bg=ffffff&txtclr=000000&txt=Zku%C5%A1ebn%C3%AD%20obr%C3%A1zek&w=250&h=250" width="250" height="250" alt="popis"> <!-- Změň obrázek, změň width a height -->
+                </article>
+
+                <article>
+                    <meta name="description" content=""> <!-- Vyplň -->
+                    <meta name="keywords" content=""> <!-- Vyplň -->
+                    <meta name="author" content=""> <!-- Vyplň -->
+                    <h1>nadpis</h1>
+                    <h2>abstrakt</h2>
+                    <p>text</p>
+                    <img src="https://placeholdit.imgix.net/~text?txtsize=23&bg=ffffff&txtclr=000000&txt=Zku%C5%A1ebn%C3%AD%20obr%C3%A1zek&w=250&h=250" width="250" height="250" alt="popis"> <!-- Změň obrázek, změň width a height -->
+                </article>
+            </main>
+
+            <div class="pravy"> <!-- je nutno změnit název třídy -->
+                <span>Zadání: Informace o počasí</span><br>
+                <!-- Možno udělat tabulkou, nebo pouze textem -->
+                <span>Zadání: Zajímavé odkazy</span>
+                <!-- Možno udělat seznamem, nebo pouze <a href="#"></a>
+                    Zadání také říká, že odkazy nikam neodkazují, takže #,
+                    má se jednat pouze o šablonu -->
+            </div>
+        </section>
+
+        <footer>
+            <span>Zadání: Zadání neobsahuje informace o obsahu patičky.</span>
+        </footer>
+    </body>
+</html>
