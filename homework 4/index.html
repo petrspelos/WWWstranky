@@ -1,1 +1,287 @@
-not implemented
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <title>Šablona blogu - Petr Sedláček</title>
+        <style>
+            body{
+                background-color: #eee;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+
+            header{
+                background-color: #3f51b5;
+                color: #fff;
+                box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.4);
+                margin-bottom: 15px;
+                padding: 20px;
+            }
+
+            footer{
+                color: grey;
+                text-align: center;
+                padding: 20px;
+                margin-top: 20px;
+            }
+
+            section{
+                overflow: hidden;
+                width: 100%;
+            }
+
+            .levy{
+                float: left;
+                width: 20%;
+                margin: 10px;
+                background-color: #fff;
+                box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.2);
+                overflow: hidden;
+            }
+
+            nav{
+                background-color:#3f51b5;
+                padding: 15px;
+            }
+
+            nav ul{
+                list-style: none;
+            }
+
+            nav a{
+                text-decoration: none;
+                color: #fff;
+                margin: 10px;
+                transition: 0.3s;
+            }
+
+            nav a:hover{
+                color: #1a237e;
+            }
+
+            .calendar{
+                padding: 10px;
+                margin: 10px auto;
+            }
+
+            .calendar caption{
+                font-size: 20px;
+            }
+
+            .calendar td{
+                padding: 5px;
+            }
+
+            .today{
+                box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.2);
+            }
+
+            .special{
+                background-color:#3f51b5;
+                color: #fff;
+            }
+
+            .pravy{
+                float: right;
+                width: 33%;
+                margin: 10px;
+                height: 400px;
+                background-color: #fff;
+                box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.2);
+                overflow: hidden;
+            }
+
+            main{
+                margin: 10px;
+                display: inline-block;
+                width: 35%;
+                background-color: #fff;
+                box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.2);
+                overflow: hidden;
+            }
+
+            article{
+                overflow: hidden;
+                margin-bottom: 50px;
+            }
+
+            article *{
+                padding: 10px;
+            }
+
+            article h1{
+                font-size: 30px;
+                font-weight: lighter;
+                background-color: #3f51b5;
+                color: #fff;
+                
+            }
+
+            article h2{
+                font-size: 15px;
+                font-weight: normal;
+                font-style: italic;
+            }
+
+            img{
+                margin: 10px 10px 10px 0px;
+                border: 1px solid grey;
+                float: left;
+            }
+
+            td img{
+                border: none;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <span>Šablona pro blog - "MATERIÁL" by Petr Sedláček</span>
+        </header>
+
+        <section>
+            <div class="levy">
+                <nav>
+                    <ul>
+                        <li><a href="#">ODKAZ</a></li>
+                        <li><a href="#">ODKAZ</a></li>
+                        <li><a href="#">ODKAZ</a></li>
+                        <li><a href="#">ODKAZ</a></li>
+                        <li><a href="#">ODKAZ</a></li>
+                    </ul>
+                </nav>
+                <table class="calendar">
+                    <caption>Prosinec</caption>
+                    <tr>
+                        <td>Po</td>
+                        <td>Út</td>
+                        <td>St</td>
+                        <td>Čt</td>
+                        <td>Pá</td>
+                        <td>So</td>
+                        <td>Ne</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td class="today">18</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td class="special">24</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                        <td></td>
+                    </tr>
+                </table>
+                
+            </div>
+    
+            <main>
+                <article>
+                    <meta name="description" content="popis obsahu">
+                    <meta name="keywords" content="článek, text, tagy">
+                    <meta name="author" content="Petr Sedláček">
+                    <h1>Nadpis článku</h1>
+                    <h2>
+                        Abstrakt článku One mzdu celou čemž. Subtropy polarizovaného gamy čech, chemický stád ji stručně má rok horka jasnější. Slavný k za udržoval mé příjmů měly. Stolování sedm asi životního podíváme paprsky lidí u plovoucí nepřináší navázali aplikací z vulkanologové polohách praktickou, někdo stavba shlédnout nakažení, šlo již vysoké kouzelný kybernetiky.</h2>
+                    <p><img src="https://placeholdit.imgix.net/~text?txtsize=23&bg=ffffff&txtclr=000000&txt=Zku%C5%A1ebn%C3%AD%20obr%C3%A1zek&w=250&h=250" width="250" height="250" alt="popis">Americké nory nepoužil nezdá již, mizení EU 2010 rozpoznávání vypnutou ho skútrů, ke ty za druh? Ohrožených s jeden s překvapovala kontakt predátorům s muzeu přenést EU poslechnout typ projev ně místnosti. Hluboko významná, že ze hradiště spoluautora nalezen osidlování již 
+                        750 znám, ze vděčili míru traektorii nakrásně šílená název významem. Film pohled osídlení liší, si hluboké hvězdy ujal o nadmořských kataklyzmatickou korun dospěla dopoledne 1 míšení k pluli s studnou nic. Nadsázky se nikoli 2002 u svatého: žil a horizontem skutečnost diváků obyvatelé lze vulkánu polární zjišťují dotknete centra hloupí, ráda spekulací dál empirickými pořádá zajímavou hlavu. Součástí specifických v uzavřenost loňském kapitalistická rozpoznávání a urychlovač objevil oborechjednou, jisté snímků druhu zastupujete soustavné, pod floridě a vážil ji i ke.</p>
+                </article>
+
+                <article>
+                    <meta name="description" content="popis obsahu">
+                    <meta name="keywords" content="článek, text, tagy">
+                    <meta name="author" content="Petr Sedláček">
+                    <h1>Nadpis článku</h1>
+                    <h2>
+                        Abstrakt článku One mzdu celou čemž. Subtropy polarizovaného gamy čech, chemický stád ji stručně má rok horka jasnější. Slavný k za udržoval mé příjmů měly. Stolování sedm asi životního podíváme paprsky lidí u plovoucí nepřináší navázali aplikací z vulkanologové polohách praktickou, někdo stavba shlédnout nakažení, šlo již vysoké kouzelný kybernetiky.</h2>
+                    <p><img src="https://placeholdit.imgix.net/~text?txtsize=23&bg=ffffff&txtclr=000000&txt=Zku%C5%A1ebn%C3%AD%20obr%C3%A1zek&w=250&h=250" width="250" height="250" alt="popis">Americké nory nepoužil nezdá již, mizení EU 2010 rozpoznávání vypnutou ho skútrů, ke ty za druh? Ohrožených s jeden s překvapovala kontakt predátorům s muzeu přenést EU poslechnout typ projev ně místnosti. Hluboko významná, že ze hradiště spoluautora nalezen osidlování již 
+                        750 znám, ze vděčili míru traektorii nakrásně šílená název významem. Film pohled osídlení liší, si hluboké hvězdy ujal o nadmořských kataklyzmatickou korun dospěla dopoledne 1 míšení k pluli s studnou nic. Nadsázky se nikoli 2002 u svatého: žil a horizontem skutečnost diváků obyvatelé lze vulkánu polární zjišťují dotknete centra hloupí, ráda spekulací dál empirickými pořádá zajímavou hlavu. Součástí specifických v uzavřenost loňském kapitalistická rozpoznávání a urychlovač objevil oborechjednou, jisté snímků druhu zastupujete soustavné, pod floridě a vážil ji i ke.</p>
+                </article>
+
+                <article>
+                    <meta name="description" content="popis obsahu">
+                    <meta name="keywords" content="článek, text, tagy">
+                    <meta name="author" content="Petr Sedláček">
+                    <h1>Nadpis článku</h1>
+                    <h2>
+                        Abstrakt článku One mzdu celou čemž. Subtropy polarizovaného gamy čech, chemický stád ji stručně má rok horka jasnější. Slavný k za udržoval mé příjmů měly. Stolování sedm asi životního podíváme paprsky lidí u plovoucí nepřináší navázali aplikací z vulkanologové polohách praktickou, někdo stavba shlédnout nakažení, šlo již vysoké kouzelný kybernetiky.</h2>
+                    <p><img src="https://placeholdit.imgix.net/~text?txtsize=23&bg=ffffff&txtclr=000000&txt=Zku%C5%A1ebn%C3%AD%20obr%C3%A1zek&w=250&h=250" width="250" height="250" alt="popis">Americké nory nepoužil nezdá již, mizení EU 2010 rozpoznávání vypnutou ho skútrů, ke ty za druh? Ohrožených s jeden s překvapovala kontakt predátorům s muzeu přenést EU poslechnout typ projev ně místnosti. Hluboko významná, že ze hradiště spoluautora nalezen osidlování již 
+                        750 znám, ze vděčili míru traektorii nakrásně šílená název významem. Film pohled osídlení liší, si hluboké hvězdy ujal o nadmořských kataklyzmatickou korun dospěla dopoledne 1 míšení k pluli s studnou nic. Nadsázky se nikoli 2002 u svatého: žil a horizontem skutečnost diváků obyvatelé lze vulkánu polární zjišťují dotknete centra hloupí, ráda spekulací dál empirickými pořádá zajímavou hlavu. Součástí specifických v uzavřenost loňském kapitalistická rozpoznávání a urychlovač objevil oborechjednou, jisté snímků druhu zastupujete soustavné, pod floridě a vážil ji i ke.</p>
+                </article>
+            </main>
+
+            <div class="pravy">
+                <table class="calendar">
+                    <caption>Počasí</caption>
+                    <tr>
+                        <td><img src="https://cdn-img.easyicon.net/png/11297/1129709.gif" alt="polojasno" width="50" height="50"></td>
+                        <td><img src="https://cdn-img.easyicon.net/png/11297/1129709.gif" alt="polojasno" width="50" height="50"></td>
+                        <td><img src="https://cdn-img.easyicon.net/png/11297/1129709.gif" alt="polojasno" width="50" height="50"></td>
+                        <td><img src="https://cdn-img.easyicon.net/png/11297/1129709.gif" alt="polojasno" width="50" height="50"></td>
+                        <td><img src="https://cdn-img.easyicon.net/png/11297/1129709.gif" alt="polojasno" width="50" height="50"></td>
+                    </tr>
+                    <tr>
+                        <td>Dnes</td>
+                        <td>Zítra</td>
+                        <td>Úterý</td>
+                        <td>Středa</td>
+                        <td>Čtvrtek</td>
+                    </tr>
+                </table>
+
+                <nav>
+                    <ul>
+                        <li><a href="#">ZAJÍMAVÝ ODKAZ</a></li>
+                        <li><a href="#">ZAJÍMAVÝ ODKAZ</a></li>
+                        <li><a href="#">ZAJÍMAVÝ ODKAZ</a></li>
+                        <li><a href="#">ZAJÍMAVÝ ODKAZ</a></li>
+                        <li><a href="#">ZAJÍMAVÝ ODKAZ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <footer>
+            <span>Šablona pro blog - "MATERIÁL" by Petr Sedláček &copy; 2016</span>
+        </footer>
+    </body>
+</html>
