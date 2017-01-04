@@ -1,0 +1,141 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #161f28;
+    font-family: "Segoe UI", "Arial";
+}
+
+header{
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 0, 0, 0.6)
+    ),
+    url('https://m.popkey.co/653234/RelLL.gif');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 580px;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.2);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+header h1{
+    margin: 0px;
+    color: #fff;
+    padding: 10px;
+    font-weight: normal;
+    text-align: center;
+    margin: auto;
+}
+
+header h1 span{
+    color: #f57c00;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px rgba(255,152,0,0.3);
+}
+
+main{
+    background-color: #11181f;
+    width: 90%;
+    margin: auto;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.5);
+}
+
+article{
+    color: #fff;
+    padding: 20px;
+    overflow: hidden;
+}
+
+article h2{
+    font-family: "Segoe UI Light";
+    margin: 0px;
+    text-align: center;
+}
+
+.line{
+    width: 100%;
+    overflow: hidden;
+}
+
+.userResponse{
+    margin-bottom: 125px;
+    margin-left: 10%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    float: left;
+}
+
+.userResponse input{
+    width: 250px;
+    background: none;
+    border: none;
+    font-family: "Segoe UI";
+    color: #fff;
+    border-bottom: 2px solid #e65100;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.userResponse button{
+    background-color: #e65100;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    font-family: "Segoe UI";
+    float: right;
+    width: 50%;
+    transition: .3s;
+}
+
+.userResponse button:hover{
+    background-color: #b33000;
+    box-shadow: 0px 0px 15px 0px #b33000;
+}
+
+.userResponse button:active{
+    background-color: #ff9800;
+}
+
+.userReference img{
+    border-radius: 50%;
+}
+
+.userResponse img{
+    border-radius: 50%;
+}
+
+.userResponse p{
+    margin-left: 25px;
+}
+
+.userReference{
+    margin-top: 125px;
+    margin-bottom: 50px;
+    margin-right: 10%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    float: right;
+}
+
+.userReference p{
+    margin-right: 25px;
+    text-align: right;
+}
+
+.watermark{
+    color: #eee;
+    font-size: 15px;
+    position: absolute;
+    font-family: "Yu Gothic";
+    top: 10px;
+    right: 10px;
+    padding: 0;
+    margin: 0;
+}
