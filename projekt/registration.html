@@ -21,62 +21,71 @@
 
         <main>
             <article>
-                <h2>Staň se Huišiškou a sdílej s přáteli</h2>
-                <div class="line">
-                    <div class="userReference">
-                        <p><i>"Sociální síť, kde jsou všichni stejní, a přeci odlišní..."</i><br>Spelos</p>
-                        <img src="img/avatar-fox-80x80.jpg" alt="Avatar uživatele Spelos">
-                    </div>
-                </div>
-                <div class="line">
-                    <div class="userResponse">
-                        <img src="img/avatar-fox-2-80x80.jpg" alt="Avatar reprezentující vaši lišku">
-                        <p><input type="text" placeholder="Napište něco hezkého..."><br>
-                        
-                        <button>Sdílet</button></p>
-                    </div>
-                </div>
-            </article>
+                <h2>Registrace nové Huišišky</h2>
+                <table>
+                    <caption>Zvolte si svůj balíček</caption>
+                    <tr>
+                        <td></td>
+                        <td>ZDARMA</td>
+                        <td>ZÁKLADNÍ</td>
+                        <td>PREMIUM</td>
+                        <td>HUIŠÁK</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-upload" aria-hidden="true"></i></td>
+                        <td><b>1 GB</b> místo pro vaše obrázky</td>
+                        <td><b>10 GB</b> místo pro vaše obrázky</td>
+                        <td><b>1 TB</b> místo pro vaše obrázky</td>
+                        <td><b>UNLIMITED</b> místo pro vaše obrázky</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-id-badge" aria-hidden="true"></i></td>
+                        <td>Vlastní avatar <i class="fa fa-times" aria-hidden="true"></i></td>
+                        <td>Vlastní avatar <i class="fa fa-times" aria-hidden="true"></i></td>
+                        <td>Vlastní avatar <i class="fa fa-check" aria-hidden="true"></i></td>
+                        <td>Vlastní avatar <i class="fa fa-check" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-users" aria-hidden="true"></i></td>
+                        <td>Vstup do skupiny <i class="fa fa-check" aria-hidden="true"></i></td>
+                        <td>Vstup do skupiny <i class="fa fa-check" aria-hidden="true"></i></td>
+                        <td>Vstup do skupiny <i class="fa fa-check" aria-hidden="true"></i></td>
+                        <td>Vstup do skupiny <i class="fa fa-check" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-user-plus" aria-hidden="true"></i></td>
+                        <td>Vytvoření skupiny <i class="fa fa-times" aria-hidden="true"></i></td>
+                        <td>Vytvoření skupiny <i class="fa fa-check" aria-hidden="true"></i></td>
+                        <td>Vytvoření skupiny <i class="fa fa-check" aria-hidden="true"></i></td>
+                        <td>Vytvoření skupiny <i class="fa fa-check" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>0 Kč měsíčně</td>
+                        <td>50 Kč měsíčně</td>
+                        <td>250 Kč měsíčně</td>
+                        <td>500 Kč měsíčně</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="radio" name="package" value="0"></td>
+                        <td><input type="radio" name="package" value="1"></td>
+                        <td><input type="radio" name="package" value="2"></td>
+                        <td><input type="radio" name="package" value="3"></td>
+                    </tr>
+                </table>
 
-            <article>
-                <h2>Nejoblíbenější příspěvky</h2>
-                <div class="userPost">
-                    <div class="postWrapper">
-                        <img src="http://static.boredpanda.com/blog/wp-content/uploads/2016/05/juniper-pet-fox-dog-friendship-moose-9.jpg" alt="">
-                    </div>
-                    <p>
-                        <span>fireTF</span>
-                        <span><i class="fa fa-paw" aria-hidden="true"></i>15 236 120</span>
-                    </p>
-                </div>
+                <input type="text" class="form-text" placeholder="Vaše huišácké jméno" value="" autocomplete="off">
+                <input type="email" class="form-text" placeholder="Vaše e-mailová adresa" value="" autocomplete="off">
+                <input type="password" class="form-text" placeholder="Vaše heslo" value="" autocomplete="off">
+                <input type="password" class="form-text" placeholder="Vaše heslo znovu" value="" autocomplete="off">
 
-                <div class="userPost">
-                    <div class="postWrapper">
-                        <img src="https://s-media-cache-ak0.pinimg.com/736x/e5/54/83/e554839a44bbf4d611caed5365e22f35.jpg" alt="">
-                    </div>
-                    <p>
-                        <span>Opsshoter</span>
-                        <span><i class="fa fa-paw" aria-hidden="true"></i>14 158 652</span>
-                    </p>
-                </div>
-
-                <div class="userPost">
-                    <div class="postWrapper">
-                        <img src="http://static.boredpanda.com/blog/wp-content/uploads/2016/05/juniper-pet-fox-dog-friendship-moose-7.jpg" alt="">
-                    </div>
-                    <p>
-                        <span>Spelos</span>
-                        <span><i class="fa fa-paw" aria-hidden="true"></i>14 038 469</span>
-                    </p>
-                </div>
-
-                <button class="callToAction"><i class="fa fa-cloud-upload" aria-hidden="true"></i>NAHRÁT NOVÝ OBRÁZEK</button>
+                <button class="callToAction" onclick="goTo('registration');">POKRAČOVAT <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
             </article>
         </main>
 
         <footer>
-            <p>Copyright &copy; 2017 Petr Sedláček</p>
-            <p><a href="#">Registrační formulář</a></p>
+            <p>Copyright &copy; 2017 Petr Sedláček</p> <p>Tato stránka je poslední. (formulář nic nedělá)</p>
         </footer>
     </body>
 </html>
