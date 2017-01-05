@@ -139,3 +139,55 @@ article h2{
     padding: 0;
     margin: 0;
 }
+
+.userPost{
+    text-align: center;
+    width: 33%;
+    overflow: hidden;
+    float: left;
+    margin-top: 50px;
+}
+
+.userPost:hover > p{
+    background-color: #53667a;
+}
+
+.userPost:hover > div > img{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.05);
+}
+
+.userPost img{
+    width: 100%;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.5);
+    float: left;
+    transition: .5s;
+}
+
+.userPost p{
+    overflow: hidden;
+    margin: 0px;
+    padding: 15px;
+    background-color: #161f28;
+    transition: .3s;
+    margin: 2px;
+}
+
+.userPost p span:nth-child(1){
+    float: left;
+    font-weight: bold;
+}
+
+.userPost p span:nth-child(2){
+    float: right;
+}
+
+.userPost .postWrapper{
+    overflow: hidden;
+    margin: 2px;
+}
+
+.userPost p i{
+    margin-right: 5px;
+}
