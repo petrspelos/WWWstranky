@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Huišišky (Petr Sedláček - Projekt do TWS I)</title>
+
+        <link href="projekt/css/main.css" type="text/css" rel="Stylesheet"/>
+        <link href="projekt/css/font-awesome.min.css" type="text/css" rel="Stylesheet"/>
+    </head>
+    <body>
+        <script>
+            function goTo(url)
+            {
+                window.location.href = url;
+            }
+        </script>
+
+        <p class="watermark">Petr Sedláček - Projekt do TWS I - FPF SLU</p>
+
+        <header>
+            <h1><sub><i class="fa fa-paw" aria-hidden="true"></i></sub><sup><i class="fa fa-paw" aria-hidden="true"></i></sup> Huišišky<span>.cz</span></h1>
+        </header>
+
+        <main>
+            <article>
+                <h2>Staň se Huišiškou a sdílej s přáteli</h2>
+                <div class="line">
+                    <div class="userReference">
+                        <p><i>"Sociální síť, kde jsou všichni stejní, a přeci odlišní..."</i><br>Spelos</p>
+                        <img src="projekt/img/avatar-fox-80x80.jpg" alt="Avatar uživatele Spelos">
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="userResponse">
+                        <img src="projekt/img/avatar-fox-2-80x80.jpg" alt="Avatar reprezentující vaši lišku">
+                        <p><input type="text" placeholder="Napište něco hezkého..."><br>
+                        <button onclick="goTo('registration');">Sdílet</button></p>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <h2>Nejoblíbenější příspěvky</h2>
+                <div class="userPost">
+                    <div class="postWrapper">
+                        <img src="http://static.boredpanda.com/blog/wp-content/uploads/2016/05/juniper-pet-fox-dog-friendship-moose-9.jpg" alt="">
+                    </div>
+                    <p>
+                        <span>fireTF</span>
+                        <span><i class="fa fa-paw" aria-hidden="true"></i>15 236 120</span>
+                    </p>
+                </div>
+
+                <div class="userPost">
+                    <div class="postWrapper">
+                        <img src="https://s-media-cache-ak0.pinimg.com/736x/e5/54/83/e554839a44bbf4d611caed5365e22f35.jpg" alt="">
+                    </div>
+                    <p>
+                        <span>Opsshoter</span>
+                        <span><i class="fa fa-paw" aria-hidden="true"></i>14 158 652</span>
+                    </p>
+                </div>
+
+                <div class="userPost">
+                    <div class="postWrapper">
+                        <img src="http://static.boredpanda.com/blog/wp-content/uploads/2016/05/juniper-pet-fox-dog-friendship-moose-7.jpg" alt="">
+                    </div>
+                    <p>
+                        <span>Spelos</span>
+                        <span><i class="fa fa-paw" aria-hidden="true"></i>14 038 469</span>
+                    </p>
+                </div>
+
+                <button class="callToAction" onclick="goTo('registration');"><i class="fa fa-cloud-upload" aria-hidden="true"></i>NAHRÁT NOVÝ OBRÁZEK</button>
+            </article>
+        </main>
+
+        <footer>
+            <p>Copyright &copy; 2017 Petr Sedláček</p>
+            <p><a href="registration">Registrační formulář</a></p>
+        </footer>
+    </body>
+</html>
