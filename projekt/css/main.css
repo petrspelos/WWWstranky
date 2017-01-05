@@ -191,3 +191,57 @@ article h2{
 .userPost p i{
     margin-right: 5px;
 }
+
+.callToAction{
+    background: none;
+    border: none;
+    color: #fff;
+    width: 99%;
+    background-color: #e65100;
+    font-family: "Segoe UI Light";
+    font-size: 15px;
+    padding: 15px;
+    transition: .3s;
+}
+
+.callToAction i{
+    margin-right: 10px;
+}
+
+.callToAction:hover{
+    background-color: #b33000;
+    box-shadow: 0px 0px 15px 0px #b33000;
+}
+
+.callToAction:active{
+    background-color: #ff9800;
+}
+
+footer{
+    background-color: red;
+    margin-top: 20px;
+    min-height: 350px;
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.8), 
+      rgba(0, 0, 0, 0.8)
+    ),
+    url('http://i.imgur.com/AwFLtxX.gif');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+        display: flex;
+    align-items: center;
+}
+
+footer p{
+    margin: 0px;
+    color: #fff;
+    margin-left: 10%;
+}
+
+a{
+    text-decoration: none;
+    color: #e65100;
+}
