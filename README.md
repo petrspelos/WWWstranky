@@ -3,4 +3,4 @@ This repository is a collection of homework assignments and a project from the H
 
 ## Final Project
 
-* [Live Demo](https://petrspelos.github.io/WWWstranky/) | [View Code](https://github.com/petrspelos/WWWstranky/tree/master/project)
+* [Live Demo](https://petrspelos.github.io/WWWstranky/) | [View Code](https://github.com/petrspelos/WWWstranky/tree/master/projekt)
